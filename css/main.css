@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400italic);
 @import url('https://fonts.googleapis.com/css?family=Cinzel|Lobster|Open+Sans+Condensed:300');
 
-/*base style*/
+/*base style, general style*/
 html, body {
 	padding: 0;
 	margin: 0;
@@ -15,19 +15,18 @@ body {
 	font-size: 20px;
 	text-align: justify;
 }
-
-a {
+a{
 	color: #0d8ba1;
 	text-decoration: none;
 }
-abbr { 
+abbr{ 
 	border: none;
 	text-transform: uppercase;
 	font-size: 1em;
 	letter-spacing: 0.02em;
 }
 
-/*header*/
+/*HEADER*/
 header {
 	height: 250px;
 	padding: 20px 0 70px 0;
@@ -47,16 +46,16 @@ h2{
 	color: gray;
 }
 
-/*basic content*/
-p {
+/*BASIC CONTENT*/
+p{
   margin: 1em;
   width: 66.3%;
 }
 div.participation, div.benefits{
 	background-color: rgba(138,188,159,0.5);
-  	background-size: cover;
-  	padding: 1em 0;
-  	border: 1em;
+  background-size: cover;
+  padding: 1em 0;
+  border: 1em;
 }
 
 h3{
@@ -66,108 +65,90 @@ h3{
 	margin: 1em;
 }
 
-/* sidebar base style */
-.design-selection{
-	background: #edf4f0;
-	width: 30%;
-	float: right;
+/*SIDEBAR STYLE*/
+  .design-selection{
+  	background: #edf4f0;
+  	width: 30%;
+  	float: right;
     position: absolute;
-    top: 360px;
+    top: 340px;
     right: 0;
-    padding: 0 0 20px 0;
     margin: 0;
     overflow: visible;
-}/*
-.zen-resources{
+  }
+  .sidebar li {
+      float: none;
+      width: auto;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0 29% 0 14%;
+  }
+  .sidebar h3 {
+    display: none;
+  }
+  .sidebar a {
+    color: #607476;
+    text-decoration: none;
+  }
+  #design-selection ul, #zen-resources ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+  #design-selection li, #zen-resources li{
+    float: left;
+    width: 50%;
+    padding: 1.45em 10%;
+    border-top: solid 1px #d9e3dc;
+    color: #c0cac3;
+    font-style: italic;
+  }
+  
+  .design-selection, .design-name, .zen-resources a, li.viewall a{
+    display: block;
+    margin-bottom: 0.25em;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 0.8em;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+  /*
+  #design-archives{
     position: absolute;
     top: 360px;
+    float: right;
     right: 0;
-    width: 33.3%;
-    padding: 0 0 20px 0;
+    width: 30%;
+    padding: 1350px 20px;
     margin: 0;
     overflow: visible;
-}*/
-.sidebar li {
-    float: none;
-    width: auto;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0 29.4% 0 14.7%;
-}
-.sidebar h3 {
-  display: none;
-}
-.sidebar a {
-  color: #607476;
-  text-decoration: none;
-}
-.sidebar ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  overflow: hidden;
-}
+  }*/
 
+  #zen-resources{
+    position: absolute;
+    top: 360px;
+    float: right;
+    right: 0;
+    width: 30%;
+    padding: 750px 20px;
+    margin: 0;
+    overflow: visible;
+  }
 
-.design-selection li, .zen-resources li {
-  float: left;
-  width: 50%;
-  padding: 1.5em 10%;
-  border-top: solid 1px #d9e3dc;
-  color: #c0cac3;
-  font-style: italic;
-}
-.design-selection .design-name, .zen-resources a, li.viewall a {
-  display: block;
-  margin-bottom: 0.25em;
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 1.2em;
-  font-style: normal;
-  text-transform: uppercase;
-}
-.view-css
-/*
-.design-selection h3 {
-  display: none;
-}
-.design-selection .designer-name {
-  color: #616857;
-  font-size: 0.9em;
-  font-style: normal;
-}*/
-/*.design-archives {
-  position: absolute;
-  top: 160px;
-  right: 0;
-  width: 30%;
-  height: 80px;
-  background: rgba(255,255,255,0.2);
-}
-.design-archives .previous a::before {
-  content: "<";
-}
-.design-archives .next a::before {
-  content: ">";
-}
-.design-archives .viewall a:hover, .design-archives .viewall a:focus, .design-archives .viewall a:active,
-.design-archives a:hover::before, .design-archives a:focus::before, .design-archives a:active::before {
-  background-color: rgba(255,255,255,0.25);
-  box-shadow: inset 0 0 10px rgba(255,255,255,0.1);
-}
-.design-archives a::before{
-  position: absolute;
-  left: 0;
-  width: 70px;
-  height: 70px;
+/*FOOTER*/
+footer{
+  clear: both;
+  padding: 2em 10%;
+  color: #fff;
+  background: #134347;
   text-align: center;
-  text-indent: 0;
-  font-size: 44px;
 }
-.previous, .next {
-  left: 0;
-  z-index: 3;
+
+#zen-requirements p:last-child {
+  color: rgba(255, 255, 255, 0.7);
+  background: #134347;
+  font-style: normal;
+  padding: 1em 17%;
+  margin: 0 0 0 0;
 }
-.next {
-  left: auto;
-  right: 0;
-}*/
